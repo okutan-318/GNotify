@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "GNotify",
+    "version": "1.0.5",
+    "description": "原神のログインボーナスを受け取ったかどうかを、ポップアップウィンドウを表示してリマインドします。",
+    "background": {
+        "service_worker": "main.js",
+        "type": "module"
+    },
+    "options_ui": {
+       "open_in_tab": true,
+       "page": "options.html"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "notifications",
+        "alarms",
+        "storage", 
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_icon": "icon64.png"
+    },
+    "icons": {
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "64": "icon64.png",
+        "128": "icon128.png"
+    }
+}

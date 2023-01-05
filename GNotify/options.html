@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Genshin__318</title>
+    <link rel="shortcut icon" href="favicon64.ico" />
+
+    <style>
+        body {
+            width: fit-content;
+        }
+
+        div.board {
+            white-space: nowrap;
+            margin: 0 12px;
+            width: fit-content;
+            border: solid 1px #555;
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        div.line {
+            margin: 0 2px;
+            padding: 2px;
+        }
+
+        button#save {
+            margin-top: 8px;
+            padding: 2px 12px;
+        }
+
+        span.annotation {
+            color: #666;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>設定</h2>
+    <div class="board">
+        <div class="line">
+            <label>
+                定期チェック
+                <input type="checkbox" id="regularlyNotify_c">
+            </label>
+        </div>
+
+        <div class="line">
+            <label>
+                0分
+                <input type="checkbox" id="regularlyMinutes_0_c">
+            </label>
+            <label>
+                10分
+                <input type="checkbox" id="regularlyMinutes_1_c">
+            </label>
+            <label>
+                20分
+                <input type="checkbox" id="regularlyMinutes_2_c">
+            </label>
+            <label>
+                30分
+                <input type="checkbox" id="regularlyMinutes_3_c">
+            </label>
+            <label>
+                40分
+                <input type="checkbox" id="regularlyMinutes_4_c">
+            </label>
+            <label>
+                50分
+                <input type="checkbox" id="regularlyMinutes_5_c">
+            </label>
+        </div>
+    
+        <div class="line" style="display: flex;">
+            <div>
+                <label>
+                    0時
+                    <input type="checkbox" id="regularlyHours_0_c">
+                </label>
+                <br>
+                <label>
+                    1時
+                    <input type="checkbox" id="regularlyHours_1_c">
+                </label>
+                <br>
+                <label>
+                    2時
+                    <input type="checkbox" id="regularlyHours_2_c">
+                </label>
+                <br>
+                <label>
+                    3時
+                    <input type="checkbox" id="regularlyHours_3_c">
+                </label>
+                <br>
+                <label>
+                    4時
+                    <input type="checkbox" id="regularlyHours_4_c">
+                </label>
+                <br>
+                <label>
+                    5時
+                    <input type="checkbox" id="regularlyHours_5_c">
+                </label>
+                <br>
+                <label>
+                    6時
+                    <input type="checkbox" id="regularlyHours_6_c">
+                </label>
+                <br>
+                <label>
+                    7時
+                    <input type="checkbox" id="regularlyHours_7_c">
+                </label>
+                <br>
+                <label>
+                    8時
+                    <input type="checkbox" id="regularlyHours_8_c">
+                </label>
+                <br>
+                <label>
+                    9時
+                    <input type="checkbox" id="regularlyHours_9_c">
+                </label>
+                <br>
+                <label>
+                    10時
+                    <input type="checkbox" id="regularlyHours_10_c">
+                </label>
+                <br>
+                <label>
+                    11時
+                    <input type="checkbox" id="regularlyHours_11_c">
+                </label>
+            </div>
+            <div>
+                <label>
+                    12時
+                    <input type="checkbox" id="regularlyHours_12_c">
+                </label>
+                <br>
+                <label>
+                    13時
+                    <input type="checkbox" id="regularlyHours_13_c">
+                </label>
+                <br>
+                <label>
+                    14時
+                    <input type="checkbox" id="regularlyHours_14_c">
+                </label>
+                <br>
+                <label>
+                    15時
+                    <input type="checkbox" id="regularlyHours_15_c">
+                </label>
+                <br>
+                <label>
+                    16時
+                    <input type="checkbox" id="regularlyHours_16_c">
+                </label>
+                <br>
+                <label>
+                    17時
+                    <input type="checkbox" id="regularlyHours_17_c">
+                </label>
+                <br>
+                <label>
+                    18時
+                    <input type="checkbox" id="regularlyHours_18_c">
+                </label>
+                <br>
+                <label>
+                    19時
+                    <input type="checkbox" id="regularlyHours_19_c">
+                </label>
+                <br>
+                <label>
+                    20時
+                    <input type="checkbox" id="regularlyHours_20_c">
+                </label>
+                <br>
+                <label>
+                    21時
+                    <input type="checkbox" id="regularlyHours_21_c">
+                </label>
+                <br>
+                <label>
+                    22時
+                    <input type="checkbox" id="regularlyHours_22_c">
+                </label>
+                <br>
+                <label>
+                    23時
+                    <input type="checkbox" id="regularlyHours_23_c">
+                </label>
+            </div>
+        </div>
+    
+        <div class="line">
+            <label>
+                最終確認日時
+                <input type="datetime-local" id="lastLoginBonusCheckedDate_d" disabled>
+            </label>
+        </div>
+        
+        <div class="line">
+            <label>
+                <input type="checkbox" id="overTimeNotify_c">
+                確認後も定期通知を実行する
+            </label>
+        </div>
+        
+        <div class="line">
+            <label>
+                <input type="checkbox" id="checkAtOpen_c">
+                「ページを開く」を選択した時に確認状態にする
+            </label>
+        </div>
+        
+        <div class="line">
+            <label>
+                <input type="checkbox" id="showNotification_c">
+                デスクトップ通知（Chromeのみ）
+                <span class="annotation">※ポップアップウィンドウが表示されなくなります</span>
+            </label>
+        </div>
+        
+        <div class="line">
+            <label>
+                <input type="checkbox" id="launchedUpNotify_c">
+                起動時に通知する
+            </label>
+        </div>
+    
+        <button id="save">保存</button>
+        <label id="status"></label>
+    </div>
+
+    <!--<script src="libs.js"></script>-->
+    <script type="module" src="options.js"></script>
+</body>
+</html>
