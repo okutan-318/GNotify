@@ -19,7 +19,13 @@ https://github.com/okutan-318/GNotify/raw/main/GNotify.zip
 ④「パッケージ化されていない拡張機能を読み込む」ボタンを押して先程展開したフォルダを選択します。
 これでGNotifyがお使いのChromeに追加されます。
 
+# 導入方法(Firefox ※公式アドオンサイト)
+https://addons.mozilla.org/ja/firefox/addon/gnotify/
+
 # 導入方法(Firefox ※Zip版)
+※注意：この導入方法では一時的にしか動作しません（Firefoxを再起動すると手順③から再度読み込みし直す必要があります）
+※公式アドオンサイトからの導入を推奨します
+
 ①Zipファイルをダウンロードします。
 https://github.com/okutan-318/GNotify/raw/main/GNotify-Firefox.zip
 
@@ -29,6 +35,3 @@ https://github.com/okutan-318/GNotify/raw/main/GNotify-Firefox.zip
 
 ④先程展開したフォルダの中から「manifest.json」ファイルを選択します。
 これでGNotifyがお使いのFirefoxに追加されます。
-
-# 導入方法(Firefox ※公式アドオンサイト)
-https://addons.mozilla.org/ja/firefox/addon/gnotify/
